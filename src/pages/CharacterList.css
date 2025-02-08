@@ -1,0 +1,17 @@
+.page-title {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-large);
+  }
+  
+  .character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--spacing-medium);
+  }
+  
+  .loading, .error {
+    text-align: center;
+    padding: var(--spacing-large);
+    font-size: 1.2rem;
+  }
