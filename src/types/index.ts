@@ -47,3 +47,9 @@ export interface SeriesItem {
 export * from './Character';
 export * from './CharacterComics';
 export * from './CharacterDetail';
+
+export interface ApiResponse<T> {
+  data: {
+    results: T[];
+  };
+}
