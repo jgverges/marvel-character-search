@@ -1,8 +1,16 @@
 import { RouterProvider } from 'react-router-dom';
-import { router } from './routes';
+import './App.css';
+import router from './routes';
+import { FavoritesProvider } from './context/FavoritesContext';
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <main className="main-content">
+      <FavoritesProvider>
+        <RouterProvider router={router} />
+      </FavoritesProvider>
+    </main>
+  );
 }
 
 export default App;
